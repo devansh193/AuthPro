@@ -13,10 +13,10 @@ export const LoginButton = ({
   mode = "redirect",
   asChild,
 }: LoginButtonProps) => {
-
-    const router = useRouter(); 
+    
+  const router = useRouter();
   const onClick = () => {
-        router.push("/auth/login");
+    router.push("/auth/login");
   };
 
   if (mode === "model") return <span>TODO: model implement</span>;
